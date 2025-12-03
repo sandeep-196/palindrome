@@ -1,7 +1,10 @@
 def is_palindrome(text):
-    return text == text[::-1]
-word="MALAYALAM"
-if is_palindrome(word):
-     print("this string is palindrome")
+    text = text.lower()              # convert to lowercase
+    return text == text[::-1]        # compare with reversed string
+
+# Example usage
+s = input("Enter a string: ")
+if is_palindrome(s):
+    print("Palindrome")
 else:
-     print("This is not palindrome")
+    print("Not a palindrome")
